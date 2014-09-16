@@ -1,16 +1,18 @@
 def fizzbuzz n
-  if n % 3 == 0
-    puts "fizz"
+  if n % 3 == 0 && n % 5 == 0
+    puts "FizzBuzz"
+  elsif n % 3 == 0
+    puts "Fizz"
+  elsif n % 5 == 0
+    puts "Buzz"
   else
-    if n % 5 == 0
-    puts "fuzz"
-    end
+    puts n
+  end
 end
   # puts "fizz" if n % 3 == 0
   # puts "buzz" if n % 5 == 0
   # puts "fizzbuzz" if n % 3 == 0 && n % 5 == 0
   #   else puts n
-end
 
 fizzbuzz(3)
 fizzbuzz(10)
